@@ -25,7 +25,7 @@
     <header class="header">
         <div class="container header-container">
             <div class="logo">
-                <img src="assets/imagens/logo.png" alt="Instituto Nádia Araújo" class="fade-in-up">
+                <img src="assets/imagens/logo.png" alt="Instituto Nádia Araújo" class="header-logo">
             </div>
             <!-- Simple navigation for desktop -->
             <nav class="nav-desktop">
@@ -41,6 +41,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="container hero-content">
+            <img src="assets/imagens/logo.png" alt="Instituto Nádia Araújo" class="hero-logo fade-in-up">
             <h1 class="headline fade-in-up">Recupere o controle da sua mente e viva com equilíbrio</h1>
             <p class="subheadline fade-in-up stagger-delay-1">Supere a ansiedade, a depressão e o baixo desempenho
                 mental com um método integrado
@@ -54,30 +55,115 @@
     <section id="problemas" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Você se identifica com algum desses sintomas?</h2>
-            <div class="cards-grid">
-                <div class="card fade-in-up stagger-delay-1">
-                    <h3>Ansiedade</h3>
-                    <p>Preocupação excessiva, inquietação e tensão constante.</p>
-                </div>
-                <div class="card fade-in-up stagger-delay-2">
-                    <h3>Depressão</h3>
-                    <p>Desânimo, tristeza profunda e falta de interesse na vida.</p>
-                </div>
-                <div class="card fade-in-up stagger-delay-3">
-                    <h3>Falta de Foco</h3>
-                    <p>Dificuldade em se concentrar e memória fraca (esquecimento).</p>
-                </div>
-                <div class="card fade-in-up stagger-delay-4">
-                    <h3>Sono Ruim</h3>
-                    <p>Insônia, sono agitado ou sensação de cansaço ao acordar.</p>
-                </div>
-                <div class="card fade-in-up stagger-delay-5">
-                    <h3>Baixo Desempenho</h3>
-                    <p>Sensação de travamento mental e improdutividade.</p>
-                </div>
-                <div class="card fade-in-up stagger-delay-6">
-                    <h3>Hiperatividade</h3>
-                    <p>Mente acelerada e dificuldade em relaxar.</p>
+            <div class="carousel-wrapper">
+                <div class="carousel-track">
+                    <!-- Original Cards with Icons -->
+                    <div class="card">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18.6 18.6L12 12l-6.6 6.6"></path>
+                            <path d="M12 2a10 10 0 1 0 0 20"></path>
+                            <path d="M12 6v6"></path>
+                        </svg>
+                        <h3>Ansiedade</h3>
+                        <p>Preocupação excessiva, inquietação e tensão constante.</p>
+                    </div>
+                    <div class="card">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                        </svg>
+                        <h3>Depressão</h3>
+                        <p>Desânimo, tristeza profunda e falta de interesse na vida.</p>
+                    </div>
+                    <div class="card">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                        <h3>Falta de Foco</h3>
+                        <p>Dificuldade em se concentrar e memória fraca (esquecimento).</p>
+                    </div>
+                    <div class="card">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                        <h3>Sono Ruim</h3>
+                        <p>Insônia, sono agitado ou sensação de cansaço ao acordar.</p>
+                    </div>
+                    <div class="card">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                        <h3>Baixo Desempenho</h3>
+                        <p>Sensação de travamento mental e improdutividade.</p>
+                    </div>
+                    <div class="card">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                        <h3>Hiperatividade</h3>
+                        <p>Mente acelerada e dificuldade em relaxar.</p>
+                    </div>
+
+                    <!-- Duplicated for Infinite Scroll -->
+                    <div class="card">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18.6 18.6L12 12l-6.6 6.6"></path>
+                            <path d="M12 2a10 10 0 1 0 0 20"></path>
+                            <path d="M12 6v6"></path>
+                        </svg>
+                        <h3>Ansiedade</h3>
+                        <p>Preocupação excessiva, inquietação e tensão constante.</p>
+                    </div>
+                    <div class="card">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                        </svg>
+                        <h3>Depressão</h3>
+                        <p>Desânimo, tristeza profunda e falta de interesse na vida.</p>
+                    </div>
+                    <div class="card">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                        <h3>Falta de Foco</h3>
+                        <p>Dificuldade em se concentrar e memória fraca (esquecimento).</p>
+                    </div>
+                    <div class="card">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                        <h3>Sono Ruim</h3>
+                        <p>Insônia, sono agitado ou sensação de cansaço ao acordar.</p>
+                    </div>
+                    <div class="card">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                        <h3>Baixo Desempenho</h3>
+                        <p>Sensação de travamento mental e improdutividade.</p>
+                    </div>
+                    <div class="card">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                        <h3>Hiperatividade</h3>
+                        <p>Mente acelerada e dificuldade em relaxar.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -166,6 +252,11 @@
                 <div class="service-item fade-in-up stagger-delay-4">
                     <h4>Sono e Hiperatividade</h4>
                     <p>Protocolos para higiene do sono e controle da agitação.</p>
+                </div>
+                <!-- New Service -->
+                <div class="service-item fade-in-up stagger-delay-5">
+                    <h4>Exame Funcional para Atletas de Alto Desempenho</h4>
+                    <p>Mapeamento fisiológico para maximizar resultados e performance esportiva.</p>
                 </div>
             </div>
         </div>
