@@ -1,10 +1,10 @@
 /* Variaveis e Reset */
 :root {
-    --primary-color: #008080;
-    /* Teal profissional */
-    --primary-dark: #004d4d;
-    --secondary-color: #e0f2f1;
-    /* Light teal background */
+    --primary-color: #1F3A60;
+    /* Navy Blue Brand */
+    --primary-dark: #102035;
+    --secondary-color: #e3f2fd;
+    /* Light Blue background */
     --accent-color: #25d366;
     /* WhatsApp Green */
     --text-color: #333333;
@@ -125,11 +125,10 @@ body {
     align-items: center;
 }
 
-.logo h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    color: var(--primary-dark);
-    line-height: 1;
+.logo img {
+    height: 60px;
+    /* Adjust based on logo aspect ratio */
+    width: auto;
 }
 
 .logo span {
